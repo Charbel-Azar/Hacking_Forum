@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#000">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:orientation="vertical">
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:background="@drawable/buttom"
+                android:text="Tools"
+                android:textColor="#fff"
+                android:textSize="20sp"
+                android:id="@+id/tools"/>
+
+            <Button
+                android:id="@+id/favorites"
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/buttom"
+                android:text="Favorites"
+                android:textColor="#fff"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/settings"
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/buttom"
+                android:text="Settings"
+                android:textColor="#fff"
+                android:textSize="20sp" />
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/buttom"
+                android:text="About us"
+                android:textColor="#fff"
+                android:textSize="20sp"
+                android:id="@+id/about"/>
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/button2"
+                android:text="Remove Ads"
+                android:textColor="#fff"
+                android:textSize="20sp"
+                android:id="@+id/ads"/>
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

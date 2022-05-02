@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="15dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#000">
+
+    <TextView
+        android:id="@+id/nameTxtfav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/imageViewfav"
+        android:layout_toRightOf="@+id/imageViewfav"
+        android:paddingBottom="10dp"
+        android:text="Spiderman"
+        android:textAlignment="center"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        android:textColor="#FFFF"/>
+
+    <ImageView
+        android:id="@+id/imageViewfav"
+        android:layout_width="150dp"
+        android:layout_height="150dp" />
+
+    <Button
+        android:id="@+id/buttonDelete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageViewfav"
+        android:layout_alignStart="@+id/nameTxtfav"
+        android:background="@drawable/buttom"
+        android:text="Delete" />
+
+
+</RelativeLayout>

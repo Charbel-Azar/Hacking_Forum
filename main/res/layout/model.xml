@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#000000"
+    android:orientation="vertical"
+    android:padding="15dp">
+
+        <TextView
+            android:id="@+id/nameTxt"
+            android:layout_width="193dp"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/airdroid"
+            android:layout_toEndOf="@+id/airdroid"
+            android:paddingBottom="10dp"
+            android:text="Spiderman"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="35dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/airdroid"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_alignStart="@+id/descTxt"
+            android:layout_centerVertical="true" />
+
+        <TextView
+            android:id="@+id/descTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="description"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/url"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="url"
+            android:visibility="invisible" />
+        <TextView
+            android:id="@+id/youtube"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="youtube"
+            android:visibility="invisible" />
+
+        <com.iarcuschin.simpleratingbar.SimpleRatingBar
+            android:id="@+id/ratingBarID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/nameTxt"
+            android:layout_centerVertical="true"
+            android:padding="5dp"
+            app:srb_borderColor="#646464"
+            app:srb_fillColor="#00ff19"
+            app:srb_numberOfStars="5"
+            app:srb_rating="3"
+            app:srb_starSize="30dp"
+            app:srb_stepSize="0.5"
+            app:srb_isIndicator="true"
+            android:isScrollContainer="true"/>
+
+    </RelativeLayout>
